@@ -3,128 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-     <script src="https://unpkg.com/lucide@latest"></script>
-    <script defer src = "/style.js" ></script>
+    <link rel="stylesheet" href="/novoStyle.css">
+    <link rel="stylesheet" href="/Responsividade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script defer src= "/style.js" ></script>
     <title>Portifolio</title>
 </head>
 <body>
-          <!--         PARTE DA NAVBAR            -->
 
+<div class="TodooConteudo">
+<!--       PARTE DA NAVBAR            -->
 <section id="inicio">
 
-<header id="navbar">
-       
-     <div class="cabesalho">
-         <div class="logo">
-            <h1>ANA </h1>
-         </div>
+<header class="fundo">
+    <div class="conteudoNavbar">
+        <div class="menuMobile"> 
+        <h1>PORTIFOLIO </h1>
+        <button class="icone-menu" id="icone-menu" onclick="ToggleMenu()">
+             ☰
+        </button>
+       </div>
 
-        <ul>
+  <div id="menu" class="menuAtivo">
+
+        <ul id="lista" class="lista" onclick="Ativar()" >  
          <li><a href="#inicio">Inicio</a></li>
          <li><a href="#Sobre_mim">Sobre</a></li>
          <li><a href="#Projetos">Projetos</a></li>
-         <li><a href="">Contato</a></li>
+         <li><a href="#Contato">Contato</a></li>
         </ul>
+       
+      <div class="icones">
+       <a href="https://wa.me/556199394691" target="_blank" rel="noopener noreferrer""><i class="fa-brands fa-whatsapp"></i></a>
+       <a href="http://linkedin.com/in/ana-vitória-454004323"><i class="fa-brands fa-linkedin-in"></i></a>
+       <a href="https://github.com/anavitoriaalvespin13-art"><i class="fa-brands fa-github"></i></a>
+       <script>lucide.createIcons();</script>
       </div> 
+  </div>
+  </div>
 </header>
+
    <!--         TEXTO DE AORESENTAÇÃO         -->
-   <div class="Conteudo">
+   <div class="Conteudo elementos">
     <div class="texto">
-     <h1>Olá, eu sou <span>Ana Vitória</span></h1>
-     <h2>Desenvolvedora Web</h2>
-     
+     <h1>Olá, eu sou Ana Vitória</h1>
+      <h2>Desenvolvedora Web</h2>
     <p>
-      Desenvolvedora web focada em HTML, CSS e JavaScript, 
-    com<br>experiência em Figma e conhecimentos básicos em linguagem C.
-    <br>Transformo ideias em interfaces modernas e funcionais. 
+      Entre linhas de código e ideias criativas, eu  construo <br> experiências 
+      digitais modernas e envolventes.
     </p>
 
-   <!--         ICONES DE REDES SOCIAIS          -->
-   <div class="icones">
-       <div><i data-lucide="instagram"></i></div>
-       <div><i data-lucide="linkedin"></i></div>
-       <div><i data-lucide="github"></i> </div>
-<script>
-  lucide.createIcons();
-</script>
+    <div class="butoes_link">
+      <a class="botao1" href="https://wa.me/556199394691" target="_blank" rel="noopener noreferrer">Entre em Contato</a>
+      <a class="botao2" href="#Projetos" target="_blank" rel="noopener noreferrer">Ver projetos</a>
     </div>
-</div> 
-           
+</div>     
    <!--       FOTO DE PERFIL          -->
-    <img id="perfil" src="/imagens/Minhafoto.jpeg" alt="perfil">
-   </div>
+    <div class="conteiner_foto">
+    <div class="bordaanimation">
+    <img class ="foto_perfil" src="/imagens/Minhafoto.jpeg" alt="perfil">
+    </div>
+  </div>
 
-
-  
+  </div> <!--FINAL DA DIV CONTEUDO-->
 </section>
 
 
 <!--        PARTE SOBRE MIM         -->
-
 <section id="Sobre_mim" >
-
 
 <h1 class="titulo">Sobre Mim</h1>
 
+   <div class="Conteudo_sobre">
+      
+           <div class="sobreTexto">
+       
+               <div class="quemSou">
+                <h3>Quem sou</h3>
+                <p>Sou estudante de Análise e Desenvolvimento de Sistemas (3º semestre), 
+                  com foco em desenvolvimento front-end e criação de interfaces modernas.</p></div>
+                 
+                <div class="oqueSei">
+                <h3>O que sei</h3>
+                <p>Tenho experiência com HTML, CSS e JavaScript, sempre priorizando
+                   usabilidade, performance e organização de código.
+                   Também atuo com UI/UX e utilizo o Figma para prototipação
+                    e design de interfaces.</p></div>
+                 
+                <div class="oqueBusco">
+                <h3>O que busco</h3>
+                <p>Busco oportunidades para aplicar meus conhecimentos na 
+                  prática, evoluir como desenvolvedor e contribuir com projetos reais.
+                   Tenho interesse em aprender novas tecnologias e 
+                   crescer profissionalmente na área.</p></div>
 
-<div class="Conteudo_sobre">
+      </div>
 
-   <div class="borda_imagem">
-    <img src="/imagens/Minhafoto.jpeg" alt="">
-  </div> 
 
-   <div class="borda_texto">
-                <h2>Desenvolvedora apaixonada</h2>
-                
-   <p>Sou estudante de Engenharia Informática e tenho paixão por tecnologia. <br>
-    Aprendi diversas linguagens de programação, incluindo HTML, CSS, JavaScript <br>
-    e PHP. Também me interesso por segurança cibernética e estudei testes de penetração.</p></div>
-</div>
-    
-</div>
+          <div class="icones_skills">
+             <div class="bolaEsfumada"></div>
+            <div class="skills">
+               <button class="HTML"><i class="fa-brands fa-html5"></i><p>HTML</p></button>
+               <button class="CSS"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></button>
+               <button class="JavaScript"><i class="fa-brands fa-square-js"></i><p>JavaScript</p></button>
+              </div>
+            <div class="skills">
+               <button class="UI"><i class="fa-solid fa-palette"></i><p>UI/UX</p></button>
+               <button class="Figma"><i class="fa-brands fa-figma"></i><p>Figma</p></button>
+               <button class="C"><i class="fa-solid fa-c"></i><p>C++</p></button>
+           </div>
+    </div>
+  </div>
+
 </section>
 
 
-
-
 <!--         PROJETOS          -->
-
-   
-
 <section id="Projetos" >
 
 <h1 class="titulo">Projetos</h1>
 
 <div class="meusprojetos">
 
-    <div class="projeto">1</div>
-    <div class="projeto">1</div>
-    <div class="projeto">1</div>
-    
+    <div class="projeto elementos">
+      <img src="/imagens/jogodamemoria.png" alt="jogo">
+
+      <div class="descricao">
+
+        <h3>Jogo da memória</h3>
+        <p>Aplicação responsiva de previsão 
+          do tempo com dados em tempo real, 
+          interface moderna e design adaptável 
+          para desktop e dispositivos móveis.
+        </p>
+    <div class="butoes_projeto">
+         <a class="Visitar" href="https://anavitoriaalvespin13-art.github.io/Projeto-01/">Visitar</a>
+         <a class="git" href="https://github.com/anavitoriaalvespin13-art/Projeto-01">GitHab</a>
+    </div>
+      </div>
+    </div>
+
+    <div class="projeto elementos">
+       <img src="/imagens/img_projetoClima.png" alt="Clima">
+
+        <div class="descricao">
+        <h3>Previsão do tempo</h3>
+        <p>Aplicação responsiva de previsão 
+          do tempo com dados em tempo real, 
+          interface moderna e design adaptável 
+          para desktop e dispositivos móveis.
+        </p>
+        <div class="butoes_projeto">
+          <a class="Visitar" href="https://anavitoriaalvespin13-art.github.io/Projeto-Clima/">Visitar</a>
+          <a class="git" href="https://github.com/anavitoriaalvespin13-art/Projeto-Clima">GitHab</a>
+       </div>
+      </div>
+
+    </div>
+
+    <div class="projeto elementos">
+       <img src="/imagens/2.png" alt="Lista-De-Tarefas-">
+
+        <div class="descricao">
+          <div class="linguagemUsada">
+          <h3>Lista de tarefa</h3>
+
+          </div>
+        <p>Aplicação responsiva de previsão 
+          do tempo com dados em tempo real, 
+          interface moderna e design adaptável 
+          para desktop e dispositivos móveis.
+        </p>
+
+        
+        <div class="butoes_projeto">
+         <a class="Visitar" href="https://anavitoriaalvespin13-art.github.io/Lista-De-Tarefas-/">Visitar</a>
+         <a class="git" href="https://github.com/anavitoriaalvespin13-art/Lista-De-Tarefas-">GitHab</a>
+       </div>
+      </div>
+    </div>   
+  <div class="projeto ultimo" >
+      <p>Em breve muitos outros peojetos.</p>
+  </div>
 </div>
+  
+   
 </section>
 
 
 <!--         CONTATO           -->
 
-<section id="contato">
+<section id="Contato">
 
-<form action="">
+<h1 class="titulo">Fale comigo!</h1>
+<div class="conteudoContato">
 
+<form id="form" class="form" action="https://api.staticforms.dev/submit" method="POST">
+<div class="bloco">
+<label for="text">Nome</label>
+<input type="text" name="nome" required>
+</div>
 
+<div class="bloco">
+<label for="email"> E-mail</label>
+<input type="email" name="email" required>
+</div>
 
+<div class="bloco mensagem">
+<label  for="text">Mensagem</label>
+<textarea id="mensagem" name="mensagem" required></textarea>
+</div>
 
+<button type="submit"> Enviar </button>
 
-
-
+<input type="hidden" name="apiKey" value="sf_a41006956fe3d4016f68072b">
 </form>
 
 
-
+<div class="outras">
+ <h3>O que posso fazer por você?</h3>
+  <ul>
+    <li>Criação de sites</li>
+    <li>Landing pages</li>
+    <li>Interfaces modernas</li>
+  </ul>
+</div>
+</div>
+  <div id="mensagemSucesso" >
+    <div class="resposta">
+       <dotlottie-wc 
+    src="https://lottie.host/134858ca-42e2-4436-b9f2-f6b372b52a38/QAXu6T6JWz.lottie"
+    style="width: 300px; height: 200px;"
+    autoplay
+    loop>
+  </dotlottie-wc>
+      <p> Mensagem enviada com sucesso!</p> 
+      <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.3/dist/dotlottie-wc.js"
+      type="module"
+     ></script>
+    </div>
+</div>
 </section>
-
-
+</div>
 
 </body>
 </html>
